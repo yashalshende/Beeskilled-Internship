@@ -1,0 +1,125 @@
+/* Reusable Footer Styles */
+.rc-footer {
+  background: #070B14;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94A3B8;
+  padding-top: 56px;
+  width: 100%;
+}
+
+.rc-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+  display: grid;
+  grid-template-columns: 2fr repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+}
+
+.rc-footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rc-footer-brand-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #F8FAFC;
+}
+
+.rc-footer-tagline {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 360px;
+}
+
+.rc-footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.rc-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #94A3B8;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.rc-social-link:hover {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: #6366F1;
+  color: #FFFFFF;
+}
+
+.rc-footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rc-footer-col-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #F8FAFC;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rc-footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rc-footer-link {
+  font-size: 0.88rem;
+  color: #94A3B8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.rc-footer-link:hover {
+  color: #6366F1;
+}
+
+/* Bottom Bar */
+.rc-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 24px 0;
+}
+
+.rc-footer-bottom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.rc-copyright {
+  font-size: 0.85rem;
+  color: #64748B;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .rc-footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

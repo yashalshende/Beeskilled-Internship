@@ -1,0 +1,51 @@
+/* CategoryFilter Styles */
+.category-filter-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 4px 0;
+}
+
+.category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #131E36;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  color: #94A3B8;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.category-pill:hover {
+  background: #1A2746;
+  color: #F8FAFC;
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.category-pill-active {
+  background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+}
+
+.category-pill-count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: inherit;
+}
+
+.category-pill-active .category-pill-count {
+  background: rgba(0, 0, 0, 0.2);
+  color: #FFFFFF;
+}

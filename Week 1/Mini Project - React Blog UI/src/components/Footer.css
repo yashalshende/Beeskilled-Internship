@@ -1,0 +1,62 @@
+/* Mini Project Footer Styles */
+.blog-footer {
+  background: #060A14;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 48px;
+  color: #94A3B8;
+  margin-top: 64px;
+}
+
+.blog-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.blog-footer-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #F8FAFC;
+  margin-bottom: 6px;
+}
+
+.blog-footer-desc {
+  font-size: 0.88rem;
+  color: #64748B;
+  max-width: 420px;
+}
+
+.blog-footer-author p {
+  font-size: 0.9rem;
+  color: #CBD5E1;
+  margin-bottom: 6px;
+}
+
+.author-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.author-links a {
+  color: #818CF8;
+  text-decoration: none;
+}
+
+.author-links a:hover {
+  text-decoration: underline;
+}
+
+.blog-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px 24px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: #64748B;
+}

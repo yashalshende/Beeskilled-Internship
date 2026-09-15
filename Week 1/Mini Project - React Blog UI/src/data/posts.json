@@ -1,0 +1,74 @@
+[
+  {
+    "id": "post-1",
+    "title": "Architecting Resilient RAG Pipelines with Ollama and FastAPI",
+    "category": "AI & Machine Learning",
+    "author": "Yashal Shende",
+    "date": "September 12, 2026",
+    "readTime": "6 min read",
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "tags": ["FastAPI", "RAG", "Ollama", "Python", "Docker"],
+    "excerpt": "How to move beyond naive vector search: structured JSON prompting, chunk reranking, and local LLaMA deployment for deterministic enterprise copilot applications.",
+    "content": "Retrieval-Augmented Generation (RAG) is transforming how modern web applications integrate domain-specific knowledge. In this article, we dissect the architecture used in ServiceIQ to bridge dense technical manuals with local LLaMA inference. We cover: 1) Document ingestion and recursive chunking strategies; 2) Vector embeddings with sentence transformers; 3) Prompt templates with Pydantic JSON schemas to guarantee parseable responses; and 4) Containerizing the Ollama daemon alongside FastAPI."
+  },
+  {
+    "id": "post-2",
+    "title": "Demystifying Explainable AI: Grad-CAM, SHAP & LIME in Computer Vision",
+    "category": "AI & Machine Learning",
+    "author": "Yashal Shende",
+    "date": "September 08, 2026",
+    "readTime": "8 min read",
+    "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Explainable AI", "Computer Vision", "PyTorch", "Forensics"],
+    "excerpt": "Black-box neural networks are unacceptable in security and medical diagnostics. Explore how saliency maps and local surrogate models illuminate deepfake boundary artifacts.",
+    "content": "When evaluating deepfake detection algorithms, accuracy numbers alone are deceptive without qualitative interpretability. Saliency visualization techniques like Grad-CAM compute the gradient of the target class score with respect to feature activation maps. Coupling Grad-CAM with SHAP (SHapley Additive exPlanations) offers mathematical guarantees on feature importance, while LIME provides model-agnostic local perturbations that forensic auditors can inspect directly."
+  },
+  {
+    "id": "post-3",
+    "title": "Mastering React Component Composition: From Props to Reusable Systems",
+    "category": "Frontend Development",
+    "author": "Yashal Shende",
+    "date": "September 04, 2026",
+    "readTime": "5 min read",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    "tags": ["React", "Architecture", "JavaScript", "Design Systems"],
+    "excerpt": "Stop copy-pasting JSX. A deep dive into compound components, props inversion of control, and headless form controllers that scale across enterprise codebases.",
+    "content": "Building genuinely reusable React components requires thinking in primitives rather than monolithic templates. By decoupling presentational styles from behavioral state, components like Header, Button, and Form become building blocks capable of morphing to fit varied requirements without code duplication. In this post, we demonstrate prop drilling mitigation and controlled state management."
+  },
+  {
+    "id": "post-4",
+    "title": "Flexbox vs. CSS Grid: Solving Real-World Responsive Layout Challenges",
+    "category": "UI/UX & CSS",
+    "author": "Yashal Shende",
+    "date": "August 28, 2026",
+    "readTime": "4 min read",
+    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "tags": ["CSS3", "Flexbox", "CSS Grid", "Responsive Design"],
+    "excerpt": "When should you reach for 1D Flexbox versus 2D CSS Grid? Practical layout patterns including auto-fit card grids, sticky headers, and responsive drawers without media queries.",
+    "content": "Modern CSS offers powerful layout primitives that make layout math intuitive. Use Flexbox for linear alignment—such as navigation item bars, button groups, and vertical timelines. Reach for CSS Grid when you have two-dimensional constraints: product galleries, dashboard metric grids, and asymmetric layouts. Learn how 'repeat(auto-fit, minmax(280px, 1fr))' handles mobile responsiveness natively."
+  },
+  {
+    "id": "post-5",
+    "title": "Building Scalable REST APIs with Node.js, Express, and Strict Schemas",
+    "category": "Backend Development",
+    "author": "Yashal Shende",
+    "date": "August 20, 2026",
+    "readTime": "7 min read",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Node.js", "Express", "REST API", "Validation", "Security"],
+    "excerpt": "Best practices for architecting MERN backend services: centralized error middleware, request schema validation, JWT auth lifecycle, and database indexing.",
+    "content": "Building a solid backend is about predictability and defense in depth. We review how to structure controllers, services, and repository layers in Node.js. Learn how request payload validation prevents injection attacks, how centralized error-handling middlewares standardize HTTP response codes, and how rate-limiting guards against denial of service."
+  },
+  {
+    "id": "post-6",
+    "title": "Building Civic Tech for Millions: Lessons from MunicipalMate Nagpur",
+    "category": "Full Stack Development",
+    "author": "Yashal Shende",
+    "date": "August 15, 2026",
+    "readTime": "6 min read",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Civic Tech", "React", "Node.js", "Accessibility", "Public Sector"],
+    "excerpt": "Designing public sector digital portals requires relentless focus on mobile performance, WCAG accessibility, and multi-tier role permissions.",
+    "content": "Government portals serve a diverse populace, from tech-savvy citizens to first-time smartphone users. MunicipalMate Nagpur was built from the ground up to support citizen grievance workflows, RTS/RTI tracking, and bill payments with minimal network payloads and zero visual friction across low-end mobile devices."
+  }
+]

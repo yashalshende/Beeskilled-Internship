@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yashal Shende | Full Stack MERN Developer & Applied AI Enthusiast</title>
+  <meta name="description" content="Official personal portfolio of Yashal Sharadrao Shende - Full Stack MERN Developer and Applied AI Researcher. Specializing in React, Node.js, RAG systems, and Explainable AI." />
+  <meta name="keywords" content="Yashal Shende, Full Stack Developer, MERN Stack, React, Node.js, Python, Applied AI, RAG, Explainable AI, Ramdeobaba University" />
+  <meta name="author" content="Yashal Sharadrao Shende" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Modern Vanilla CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Semantic Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Yashal Shende Portfolio Home">
+        <span class="logo-symbol">&lt;YS /&gt;</span>
+        <span class="logo-text">Yashal Shende</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Menu Toggle Button -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+        <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileNavMenu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-nav" id="mobileNavMenu" aria-label="Mobile Navigation" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="mailto:shendeyashal@gmail.com" class="btn btn-outline btn-full">shendeyashal@gmail.com</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span> Available for MERN & AI Engineering Opportunities
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Yashal Shende</span>
+          </h1>
+          <p class="hero-subtitle">
+            Full Stack MERN Developer &amp; Applied AI Researcher
+          </p>
+          <p class="hero-description">
+            MCA Candidate at Ramdeobaba University, building resilient web applications,
+            production RAG copilot pipelines, and explainable deepfake diagnostic systems.
+            Finalist at Orange Promptathon AI Summit 2026.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">Explore Featured Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <a href="https://github.com/yashalshende" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+          <div class="hero-quick-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Production Projects</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">8.36</span>
+              <span class="stat-label">B.Sc. CGPA</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">2026</span>
+              <span class="stat-label">AI Summit Finalist</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="profile-frame-wrapper">
+            <div class="profile-glow-ring" aria-hidden="true"></div>
+            <figure class="profile-figure">
+              <img src="assets/yashal-shende.jpg" alt="Portrait of Yashal Sharadrao Shende" class="profile-photo" width="380" height="440" loading="eager" />
+              <figcaption class="sr-only">Yashal Sharadrao Shende - Full Stack MERN & Applied AI Developer</figcaption>
+            </figure>
+            <div class="floating-badge badge-top">
+              <span class="badge-icon">⚡</span>
+              <div>
+                <strong>MERN Full Stack</strong>
+                <p>React • Node • Express</p>
+              </div>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <span class="badge-icon">🧠</span>
+              <div>
+                <strong>Applied AI / RAG</strong>
+                <p>Ollama • LLaMA • XAI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-tag">Profile Overview</p>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+        <div class="about-grid">
+          <article class="about-card card-elevated">
+            <div class="card-icon-header">
+              <span class="card-emoji">👨‍💻</span>
+              <h3 class="card-heading">Engineering Background</h3>
+            </div>
+            <p>
+              I am an MCA student at <strong>Ramdeobaba University</strong> (Expected 2027) with a solid Computer Science foundation from <strong>Gondwana University</strong> (CGPA: 8.36 / 10).
+            </p>
+            <p>
+              My passion lies at the intersection of robust <strong>MERN Full Stack Web Development</strong> and <strong>Applied AI / LLM Systems</strong>. I don't just consume AI APIs—I construct end-to-end architectures involving local LLM deployments (Ollama/LLaMA), RAG retrieval pipelines, and explainable AI visualization layers.
+            </p>
+          </article>
+          <article class="about-card card-elevated">
+            <div class="card-icon-header">
+              <span class="card-emoji">🔬</span>
+              <h3 class="card-heading">Key Research &amp; Interests</h3>
+            </div>
+            <ul class="interest-list">
+              <li>
+                <strong>Explainable AI (XAI):</strong> Interpreting deep learning decisions via Grad-CAM, SHAP, and LIME for transparent model auditing.
+              </li>
+              <li>
+                <strong>LLM Grounding &amp; RAG:</strong> Engineering deterministic JSON outputs, context retrieval, and local inference pipelines.
+              </li>
+              <li>
+                <strong>Full-Stack Architecture:</strong> Building modular, responsive, and accessible client-server systems with React, Node.js, and REST APIs.
+              </li>
+              <li>
+                <strong>Computer Vision:</strong> Image forensics, spatial-temporal video analysis, and OpenCV automation workflows.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-darker" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-tag">Academic Timeline</p>
+          <h2 class="section-title">Education &amp; Qualifications</h2>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+        <div class="timeline">
+          <!-- Item 1: MCA -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-badge current-badge">Expected 2027</span>
+                <span class="timeline-location">Nagpur, Maharashtra</span>
+              </div>
+              <h3 class="timeline-title">Master of Computer Applications (MCA)</h3>
+              <h4 class="timeline-institution">Ramdeobaba University, Nagpur</h4>
+              <p class="timeline-desc">
+                Specializing in Advanced Software Architecture, Full Stack Web Engineering (MERN), Machine Learning Systems, and Distributed Computing. Active participant in nationwide hackathons and competitive prompt engineering summits.
+              </p>
+            </article>
+          </div>
+          <!-- Item 2: B.Sc. CS -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-badge">2024</span>
+                <span class="timeline-location">Maharashtra, India</span>
+              </div>
+              <h3 class="timeline-title">Bachelor of Science — Computer Science</h3>
+              <h4 class="timeline-institution">Gondwana University</h4>
+              <p class="timeline-desc">
+                Graduated with distinction with a <strong>CGPA of 8.36 / 10</strong>. Coursework encompassed Data Structures &amp; Algorithms, Database Management Systems (SQL), Object-Oriented Programming (Java/Python), Computer Networks, and Web Fundamentals.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Certifications Bar -->
+        <div class="certifications-block">
+          <h3 class="cert-title">Honors &amp; Industry Certifications</h3>
+          <div class="cert-grid">
+            <div class="cert-badge-card">
+              <span class="cert-icon">☁️</span>
+              <div>
+                <strong>Google Cloud Foundations</strong>
+                <p>Google Skills Boost</p>
+              </div>
+            </div>
+            <div class="cert-badge-card">
+              <span class="cert-icon">🛡️</span>
+              <div>
+                <strong>AWS Cloud Technical Essentials</strong>
+                <p>Amazon Web Services</p>
+              </div>
+            </div>
+            <div class="cert-badge-card">
+              <span class="cert-icon">🏆</span>
+              <div>
+                <strong>Orange Promptathon AI Summit Finalist</strong>
+                <p>National AI Summit 2026</p>
+              </div>
+            </div>
+            <div class="cert-badge-card">
+              <span class="cert-icon">🐍</span>
+              <div>
+                <strong>Python &amp; Java Programming</strong>
+                <p>Professional Certification</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section (CSS Grid & Flexbox) -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-tag">Competencies</p>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+        <div class="skills-grid">
+          <!-- Skill Category 1 -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <span class="cat-icon">🎨</span>
+              <h3>Frontend &amp; UI Architecture</h3>
+            </div>
+            <ul class="skill-tags">
+              <li>React.js</li>
+              <li>JavaScript (ES6+)</li>
+              <li>HTML5 Semantic</li>
+              <li>CSS3 Modern</li>
+              <li>Flexbox &amp; CSS Grid</li>
+              <li>Vite</li>
+              <li>Responsive Web Design</li>
+              <li>WCAG Accessibility</li>
+            </ul>
+          </article>
+          <!-- Skill Category 2 -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <span class="cat-icon">⚙️</span>
+              <h3>Backend &amp; Databases</h3>
+            </div>
+            <ul class="skill-tags">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>Flask</li>
+              <li>RESTful API Design</li>
+              <li>SQL (PostgreSQL, SQLite)</li>
+              <li>JSON Schema Validation</li>
+            </ul>
+          </article>
+          <!-- Skill Category 3 -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <span class="cat-icon">🤖</span>
+              <h3>AI, ML &amp; Explainability</h3>
+            </div>
+            <ul class="skill-tags">
+              <li>LLM Prompt Engineering</li>
+              <li>RAG Architecture</li>
+              <li>Ollama &amp; Local LLaMA</li>
+              <li>OpenCV</li>
+              <li>Computer Vision</li>
+              <li>Grad-CAM Visualization</li>
+              <li>SHAP &amp; LIME</li>
+              <li>PyTorch Basics</li>
+            </ul>
+          </article>
+          <!-- Skill Category 4 -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <span class="cat-icon">🛠️</span>
+              <h3>DevOps &amp; Engineering Tools</h3>
+            </div>
+            <ul class="skill-tags">
+              <li>Git &amp; GitHub</li>
+              <li>Docker Containerization</li>
+              <li>AWS Services</li>
+              <li>Google Cloud Platform</li>
+              <li>Vercel</li>
+              <li>Postman</li>
+              <li>Linux / PowerShell</li>
+              <li>Agile / Scrum</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Responsive Grid of Project Cards) -->
+    <section class="section section-darker" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-tag">Applied Engineering Work</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+        <div class="projects-grid">
+          
+          <!-- Project 1: AUTHENTIX -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-badge badge-primary">Explainable AI / Computer Vision</span>
+              <span class="project-year">2024 - 2025</span>
+            </div>
+            <h3 class="project-title">AUTHENTIX — Deepfake Diagnostic Framework</h3>
+            <p class="project-description">
+              Engineered a multi-modal deepfake detection and forensics framework for images and videos using spatial, frequency, and temporal analysis pipelines with downloadable forensic reports. Integrated Grad-CAM, SHAP, and LIME explainability layers to make deep neural network decisions auditable.
+            </p>
+            <div class="project-highlights">
+              <strong>Key Features:</strong>
+              <ul>
+                <li>Heatmap generation pinpointing facial boundary manipulation artifacts.</li>
+                <li>Automated forensic PDF report export with confidence metric distribution.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Flask</span>
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">OpenCV</span>
+              <span class="tech-pill">Grad-CAM</span>
+              <span class="tech-pill">SHAP</span>
+              <span class="tech-pill">SQLite</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/yashalshende" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Repository</a>
+              <a href="#contact" class="btn btn-sm btn-primary">Request Live Demo</a>
+            </div>
+          </article>
+
+          <!-- Project 2: ServiceIQ / HVAC Sahayak AI -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-badge badge-accent">RAG / Local LLM</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-title">ServiceIQ / HVAC Sahayak AI Copilot</h3>
+            <p class="project-description">
+              Built a technician-facing intelligent copilot utilizing structured JSON prompting, RAG-based manual retrieval, and offline-capable Ollama/LLaMA inference. Implemented equipment fault photo analysis workflows and technician report export functionalities.
+            </p>
+            <div class="project-highlights">
+              <strong>Key Features:</strong>
+              <ul>
+                <li>RAG retrieval pipeline over dense technical field manuals.</li>
+                <li>Deterministic structured JSON LLM responses for UI safety and field audits.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Ollama / LLaMA</span>
+              <span class="tech-pill">RAG</span>
+              <span class="tech-pill">Docker</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/yashalshende" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Repository</a>
+              <a href="#contact" class="btn btn-sm btn-primary">Request Tech Specs</a>
+            </div>
+          </article>
+
+          <!-- Project 3: MunicipalMate Nagpur -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-badge badge-success">Civic Tech / Full Stack</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">MunicipalMate Nagpur — Civic Tech Portal</h3>
+            <p class="project-description">
+              Developed an integrated civic governance portal designed for citizens and municipal administrators in Nagpur. Encompasses online utility bill payments, citizen grievance ticketing with live status tracking, and RTI/RTS workflow management.
+            </p>
+            <div class="project-highlights">
+              <strong>Key Features:</strong>
+              <ul>
+                <li>Role-based administrative dashboards for municipal grievance resolution.</li>
+                <li>Accessible, responsive UI ensuring mobile accessibility for all demographic groups.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">Tailwind/CSS</span>
+              <span class="tech-pill">REST APIs</span>
+              <span class="tech-pill">Vercel</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/yashalshende" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Repository</a>
+              <a href="#contact" class="btn btn-sm btn-primary">Explore Architecture</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice Set Concept: E-commerce Style Offerings & Consultation Tiers -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-tag">Practice Set Integration: E-Commerce Style Showcase</p>
+          <h2 class="section-title">Engineering Solutions &amp; Tiers</h2>
+          <p class="section-lead">E-commerce styled engagement cards showcasing modular service offerings, deliverables, and transparent scopes.</p>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+        <div class="services-grid">
+          
+          <!-- Tier 1 -->
+          <article class="service-product-card">
+            <div class="product-badge">Starter Package</div>
+            <h3 class="product-title">Full Stack Web MVP</h3>
+            <div class="product-price">
+              <span class="price-val">Custom Scope</span>
+              <span class="price-period">/ 2-4 Weeks</span>
+            </div>
+            <p class="product-desc">Turn your prototype or business concept into an interactive, production-ready React + Node.js application.</p>
+            <ul class="product-features">
+              <li>✓ Modern Responsive React &amp; Semantic HTML5</li>
+              <li>✓ Clean Component Architecture &amp; State Management</li>
+              <li>✓ RESTful API Integration &amp; CRUD Operations</li>
+              <li>✓ SEO, Performance &amp; Accessibility Tuning</li>
+            </ul>
+            <button class="btn btn-outline btn-full select-service-btn" data-service="Full Stack Web MVP">Inquire for MVP Scope</button>
+          </article>
+
+          <!-- Tier 2 (Highlighted) -->
+          <article class="service-product-card product-card-featured">
+            <div class="product-badge featured-badge">🔥 Most Requested</div>
+            <h3 class="product-title">AI &amp; RAG Copilot Integration</h3>
+            <div class="product-price">
+              <span class="price-val">Production Tier</span>
+              <span class="price-period">/ Specialized</span>
+            </div>
+            <p class="product-desc">Integrate grounded LLMs, document vector search, and local Ollama inference into your web workflows.</p>
+            <ul class="product-features">
+              <li>✓ RAG Architecture over Custom Datasets &amp; Manuals</li>
+              <li>✓ Local LLaMA / Ollama or Cloud LLM Setup</li>
+              <li>✓ Deterministic Structured JSON Output Enforcement</li>
+              <li>✓ Containerized Docker Deployment with FastAPI</li>
+            </ul>
+            <button class="btn btn-primary btn-full select-service-btn" data-service="AI & RAG Copilot Integration">Inquire for AI Integration</button>
+          </article>
+
+          <!-- Tier 3 -->
+          <article class="service-product-card">
+            <div class="product-badge">Performance &amp; Quality</div>
+            <h3 class="product-title">Code Audit &amp; UI Refactoring</h3>
+            <div class="product-price">
+              <span class="price-val">Sprint Review</span>
+              <span class="price-period">/ 1-2 Weeks</span>
+            </div>
+            <p class="product-desc">Upgrade legacy frontends to modern modular standards, eliminate layout shifts, and enforce clean patterns.</p>
+            <ul class="product-features">
+              <li>✓ React Reusability &amp; Props/State Decoupling</li>
+              <li>✓ Flexbox/Grid Refactoring &amp; Mobile Responsive Fixes</li>
+              <li>✓ Form Validation &amp; Error Boundary Implementation</li>
+              <li>✓ Comprehensive QA &amp; Code Quality Report</li>
+            </ul>
+            <button class="btn btn-outline btn-full select-service-btn" data-service="Code Audit & UI Refactoring">Schedule Code Audit</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (Semantic HTML5 Form with Accessible Labels & JS Validation) -->
+    <section class="section section-darker" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-tag">Let's Connect</p>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-lead">Have a project, internship opportunity, or technical inquiry? Send a message below or reach out directly.</p>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+        <div class="contact-grid">
+          
+          <!-- Contact Details Card -->
+          <div class="contact-info-card">
+            <h3 class="info-card-title">Contact Information</h3>
+            <p class="info-card-desc">I am actively looking for software engineering internships, frontend architecture roles, and applied AI projects.</p>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div>
+                <span class="contact-item-label">Direct Email</span>
+                <a href="mailto:shendeyashal@gmail.com" class="contact-item-value">shendeyashal@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">📱</div>
+              <div>
+                <span class="contact-item-label">Phone / WhatsApp</span>
+                <a href="tel:+917385959096" class="contact-item-value">+91-7385959096</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Nagpur, Maharashtra, India</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">💼</div>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/yashal-shende-9072b22a5" target="_blank" rel="noopener noreferrer" class="contact-item-value">linkedin.com/in/yashal-shende</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">🐙</div>
+              <div>
+                <span class="contact-item-label">GitHub</span>
+                <a href="https://github.com/yashalshende" target="_blank" rel="noopener noreferrer" class="contact-item-value">github.com/yashalshende</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript-Validated Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="portfolioContactForm" class="contact-form" novalidate aria-label="Portfolio Contact Form">
+              <div id="formStatusBanner" class="form-status-banner" role="alert" aria-live="polite" hidden></div>
+
+              <!-- Full Name Field -->
+              <div class="form-group" id="group-name">
+                <label for="contactName" class="form-label">Full Name <span class="required-asterisk">*</span></label>
+                <input 
+                  type="text" 
+                  id="contactName" 
+                  name="name" 
+                  class="form-control" 
+                  placeholder="e.g. Ananya Sharma" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="error-name"
+                />
+                <span class="form-error-msg" id="error-name" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Address Field -->
+              <div class="form-group" id="group-email">
+                <label for="contactEmail" class="form-label">Email Address <span class="required-asterisk">*</span></label>
+                <input 
+                  type="email" 
+                  id="contactEmail" 
+                  name="email" 
+                  class="form-control" 
+                  placeholder="e.g. ananya@example.com" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="error-email"
+                />
+                <span class="form-error-msg" id="error-email" aria-live="polite"></span>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group" id="group-subject">
+                <label for="contactSubject" class="form-label">Subject <span class="required-asterisk">*</span></label>
+                <input 
+                  type="text" 
+                  id="contactSubject" 
+                  name="subject" 
+                  class="form-control" 
+                  placeholder="e.g. Internship Opportunity / Web Project" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="error-subject"
+                />
+                <span class="form-error-msg" id="error-subject" aria-live="polite"></span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group" id="group-message">
+                <label for="contactMessage" class="form-label">Message <span class="required-asterisk">*</span></label>
+                <textarea 
+                  id="contactMessage" 
+                  name="message" 
+                  class="form-control" 
+                  rows="5" 
+                  placeholder="Write your message here (minimum 15 characters)..." 
+                  required 
+                  aria-required="true"
+                  aria-describedby="error-message"
+                ></textarea>
+                <span class="form-error-msg" id="error-message" aria-live="polite"></span>
+              </div>
+
+              <!-- Form Submit Button -->
+              <div class="form-actions">
+                <button type="submit" id="submitBtn" class="btn btn-primary btn-full">
+                  <span class="btn-text">Send Message</span>
+                  <span class="btn-spinner" aria-hidden="true" hidden>⏳ Sending...</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Semantic Footer Landmark -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#top" class="brand-logo footer-logo">
+          <span class="logo-symbol">&lt;YS /&gt;</span>
+          <span class="logo-text">Yashal Shende</span>
+        </a>
+        <p class="footer-bio">
+          Full Stack MERN Developer &amp; Applied AI Researcher. Crafted with modern HTML5, CSS3 Grid/Flexbox, and ES6 JavaScript for the BeeSkilled Internship (Week 1).
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4 class="footer-heading">Connect</h4>
+        <div class="social-links">
+          <a href="https://github.com/yashalshende" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/yashal-shende-9072b22a5" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+            LinkedIn
+          </a>
+          <a href="mailto:shendeyashal@gmail.com" class="social-link" aria-label="Send Email">
+            Email
+          </a>
+        </div>
+        <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top of page">
+          ↑ Back to Top
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear"></span> Yashal Sharadrao Shende. All rights reserved.</p>
+        <p class="footer-tagline">BeeSkilled Internship • Week 1 Submission</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

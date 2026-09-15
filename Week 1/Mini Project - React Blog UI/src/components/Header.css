@@ -1,0 +1,91 @@
+/* Mini Project Header Styles */
+.blog-header {
+  background: rgba(10, 15, 29, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.blog-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo-icon {
+  font-size: 1.8rem;
+}
+
+.brand-heading {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #F8FAFC;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.brand-sub {
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+
+.blog-header-stats {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.stats-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: #C7D2FE;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 9999px;
+}
+
+.stats-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10B981;
+}
+
+.repo-link-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #F8FAFC;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 7px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.repo-link-btn:hover {
+  background: #6366F1;
+  border-color: #6366F1;
+}
+
+@media (max-width: 600px) {
+  .stats-pill {
+    display: none;
+  }
+}

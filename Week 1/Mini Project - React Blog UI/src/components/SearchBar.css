@@ -1,0 +1,70 @@
+/* SearchBar Styles */
+.search-bar-wrapper {
+  width: 100%;
+}
+
+.search-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  font-size: 1.1rem;
+  color: #64748B;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 46px 14px 50px;
+  background: #131E36;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #F8FAFC;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #6366F1;
+  background: #15223e;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+.search-input::placeholder {
+  color: #64748B;
+}
+
+/* Remove default webkit search cancel button */
+.search-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-clear-btn {
+  position: absolute;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94A3B8;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.search-clear-btn:hover {
+  background: #EF4444;
+  color: #FFFFFF;
+}

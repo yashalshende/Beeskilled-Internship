@@ -1,0 +1,129 @@
+/* Reusable Button Styles */
+.rc-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  line-height: 1;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Sizes */
+.rc-btn-sm {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+}
+
+.rc-btn-md {
+  padding: 12px 20px;
+  font-size: 0.95rem;
+}
+
+.rc-btn-lg {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+}
+
+.rc-btn-full {
+  width: 100%;
+}
+
+/* Variants */
+.rc-btn-primary {
+  background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.rc-btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.45);
+}
+
+.rc-btn-secondary {
+  background: #1E293B;
+  color: #F8FAFC;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.rc-btn-secondary:hover:not(:disabled) {
+  background: #273549;
+  border-color: #6366F1;
+  transform: translateY(-2px);
+}
+
+.rc-btn-outline {
+  background: transparent;
+  color: #F8FAFC;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.rc-btn-outline:hover:not(:disabled) {
+  border-color: #6366F1;
+  background: rgba(99, 102, 241, 0.1);
+  color: #A5B4FC;
+}
+
+.rc-btn-ghost {
+  background: transparent;
+  color: #94A3B8;
+}
+
+.rc-btn-ghost:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.06);
+  color: #FFFFFF;
+}
+
+.rc-btn-danger {
+  background: #EF4444;
+  color: #FFFFFF;
+}
+
+.rc-btn-danger:hover:not(:disabled) {
+  background: #DC2626;
+  transform: translateY(-2px);
+}
+
+.rc-btn-success {
+  background: #10B981;
+  color: #FFFFFF;
+}
+
+.rc-btn-success:hover:not(:disabled) {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+/* Disabled & Loading States */
+.rc-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.rc-btn-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.rc-btn-spinner {
+  display: inline-flex;
+  animation: rc-spin 0.8s linear infinite;
+  width: 16px;
+  height: 16px;
+}
+
+@keyframes rc-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

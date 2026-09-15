@@ -60,7 +60,14 @@ export default function PostModal({ post, onClose }) {
 
         {/* Modal Header Media */}
         <div className="modal-media">
-          <img src={post.image} alt={post.title} />
+          <img
+            src={post.image}
+            alt={post.title}
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400"><rect fill="%231E293B" width="100%" height="100%"/><text fill="%23818CF8" font-family="sans-serif" font-size="28" font-weight="bold" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">${encodeURIComponent(post.category)} Article</text></svg>`;
+            }}
+          />
           <span className="modal-category-badge">{post.category}</span>
         </div>
 

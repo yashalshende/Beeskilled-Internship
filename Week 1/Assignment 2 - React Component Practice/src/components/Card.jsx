@@ -67,7 +67,16 @@ export default function Card({
       {/* Optional Media Element */}
       {image && (
         <div className="rc-card-media-wrapper">
-          <img src={image} alt={imageAlt} className="rc-card-media" loading="lazy" />
+          <img
+            src={image}
+            alt={imageAlt}
+            className="rc-card-media"
+            loading="lazy"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360"><rect fill="%231E293B" width="100%" height="100%"/><text fill="%23818CF8" font-family="sans-serif" font-size="22" font-weight="bold" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Media Preview</text></svg>`;
+            }}
+          />
           {badge && (
             <span className={`rc-card-badge rc-badge-${badgeVariant}`}>
               {badge}

@@ -33,6 +33,11 @@ export default function BlogCard({ post, onSelect }) {
     }
   };
 
+  const handleImageError = (e) => {
+    e.target.onerror = null;
+    e.target.src = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400"><rect fill="%231E293B" width="100%" height="100%"/><text fill="%23818CF8" font-family="sans-serif" font-size="28" font-weight="bold" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">${encodeURIComponent(category)} Article</text></svg>`;
+  };
+
   const handleKeyDown = (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
@@ -51,7 +56,7 @@ export default function BlogCard({ post, onSelect }) {
     >
       {/* Article Media Cover */}
       <div className="blog-card-media">
-        <img src={image} alt={title} loading="lazy" />
+        <img src={image} alt={title} loading="lazy" onError={handleImageError} />
         <span className="blog-category-badge">{category}</span>
       </div>
 

@@ -28,8 +28,10 @@ router.get('/health', (req, res) => {
     environment: process.env.NODE_ENV || 'development',
     database: {
       status: dbStatus,
-      host: mongoose.connection.host || '127.0.0.1',
-      name: mongoose.connection.name || 'beeskilled_week2',
+      ...(process.env.NODE_ENV === 'development' && {
+        host: mongoose.connection.host || '127.0.0.1',
+        name: mongoose.connection.name || 'beeskilled_week2',
+      }),
     },
   });
 });

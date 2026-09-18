@@ -46,6 +46,18 @@ const startServer = async () => {
     process.on('SIGINT', () => handleShutdown('SIGINT'));
     process.on('SIGTERM', () => handleShutdown('SIGTERM'));
 
+    // Process lifecycle: handle unhandled promise rejections gracefully
+    process.on('unhandledRejection', (err) => {
+      console.error('[Process] Fatal Unhandled Rejection:', err);
+      handleShutdown('unhandledRejection');
+    });
+
+    // Process lifecycle: handle uncaught exceptions gracefully
+    process.on('uncaughtException', (err) => {
+      console.error('[Process] Fatal Uncaught Exception:', err);
+      handleShutdown('uncaughtException');
+    });
+
   } catch (error) {
     console.error(`[Server] Fatal Error during server bootstrap: ${error.message}`);
     process.exit(1);

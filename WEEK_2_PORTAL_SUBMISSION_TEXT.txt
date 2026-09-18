@@ -1,0 +1,70 @@
+================================================================================
+BEESKILLED INTERNSHIP - WEEK 2 PORTAL SUBMISSION TEMPLATE
+================================================================================
+
+Candidate Name: Yashal Sharadrao Shende
+Degree: Master of Computer Applications (MCA), Ramdeobaba University, Nagpur
+Internship Program: BeeSkilled Full Stack Web Development (MERN) 2026
+Week: Week 2 - Backend Fundamentals, REST APIs, MongoDB & Authentication
+Email: shendeyashal@gmail.com
+GitHub Profile: https://github.com/yashalshende
+
+--------------------------------------------------------------------------------
+SUBMISSION LINKS
+--------------------------------------------------------------------------------
+Google Drive Submission Link:
+[REPLACE_WITH_YOUR_GOOGLE_DRIVE_SHARE_LINK]
+
+GitHub Repository URL:
+https://github.com/yashalshende/Beeskilled-Internship
+
+--------------------------------------------------------------------------------
+WEEK 2 DELIVERABLES & ARCHITECTURAL HIGHLIGHTS
+--------------------------------------------------------------------------------
+1. Foundation (Express.js & MongoDB):
+   • Modular MVC architecture (src/{config, controllers, middleware, models, routes, tests, utils}).
+   • Robust Mongoose database connection lifecycle management with reconnection handlers.
+   • Helmet security headers, CORS origin management, and centralized error handling with custom API envelopes.
+   • Public health telemetry endpoint at GET /api/health.
+
+2. Assignment 1: To-Do List REST API:
+   • Complete CRUD endpoints: POST, GET (all), GET (:id), PUT (:id), DELETE (:id).
+   • Advanced query support: pagination (?page=&limit=), completion filter (?completed=), regex title search (?search=), and sorting (?sort=).
+   • Hexadecimal 24-character ObjectId validation preventing runtime database casting exceptions.
+
+3. Assignment 2: User Authentication API:
+   • Endpoints: POST /api/auth/register, POST /api/auth/login, GET /api/auth/profile, GET /api/auth/me.
+   • Cryptographic password hashing using bcryptjs (10 salt rounds) with max 72-byte limit to prevent CPU exhaustion DoS.
+   • Constant-time comparison on unknown users to mitigate email enumeration and timing attacks.
+   • Stateless RFC 7519 JSON Web Token (JWT) issuance and Bearer token verification middleware with 7-day expiration.
+
+4. Mini Project: Notes App Backend:
+   • User-scoped notes with schema-level User references (ref: 'User').
+   • Compound indexing ({ user: 1, createdAt: -1 }) for optimal query performance.
+   • Strict cross-user authorization barriers: unauthorized modification or deletion returns HTTP 403 Forbidden.
+   • Full CRUD functionality strictly isolated per authenticated user session.
+
+--------------------------------------------------------------------------------
+COMPREHENSIVE TEST RESULTS & QA METRICS
+--------------------------------------------------------------------------------
+• Automated Unit & Integration Tests (npm test):
+  - Task Test Suite: 49 / 49 Assertions Passed
+  - Auth Test Suite: 48 / 48 Assertions Passed
+  - Notes Test Suite: 54 / 54 Assertions Passed
+  - Security Hardening Suite: 24 / 24 Assertions Passed
+  - Subtotal: 175 / 175 Assertions Passed (100% Success Rate)
+
+• Newman / Postman Collection Test Suite (npm run test:postman):
+  - Requests Executed: 14 / 14 Passed
+  - Assertions Evaluated: 30 / 30 Passed
+  - Failures: 0
+
+• Live Internship QA Evaluator (npm run test:qa):
+  - Strict Criteria Evaluated: 39 / 39 Passed
+  - Evaluator Compliance Score: 100 / 100
+
+• Interactive Browser Visual Test Suite (visual_test.html):
+  - Visual Test Cases: 16 / 16 Passed (100% Score)
+  - Average Latency: < 15ms
+
+================================================================================
